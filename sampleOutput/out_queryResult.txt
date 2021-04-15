@@ -1,1 +1,27 @@
+Time taken for search (in seconds): 6.174814224243164
 
+
+For given query text: obama hillary trump
+Total number of document hits: 1306
+Query Result is as follows for top 20 documents
+Document_ID Score 
+5789.txt 8.653
+6258.txt 8.629
+5998.txt 8.394
+5236.txt 8.203
+5237.txt 8.203
+969.txt 8.042
+3154.txt 8.042
+6037.txt 7.978
+3201.txt 7.972
+3207.txt 7.972
+6431.txt 7.72
+5788.txt 7.699
+1861.txt 7.688
+4299.txt 7.677
+2764.txt 7.671
+5288.txt 7.616
+1175.txt 7.602
+3509.txt 7.602
+3506.txt 7.589
+6422.txt 7.544
