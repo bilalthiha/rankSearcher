@@ -21,7 +21,8 @@ def cleanGlobalData():
 print('\nPlease key in your query:')
 queryText = input()
 
-print('\nPlease key in the path to the inverted index file.\n Example C:\rankSearcher\sampleInput\out_invertedIndexForRanking.txt')
+print('\nPlease key in the path to the inverted index file.')
+print('E.g .\sampleInput\out_invertedIndexForRanking.txt')
 invIdxFile = input()
 
 #0. Initialization

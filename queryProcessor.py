@@ -85,7 +85,7 @@ def pullDocsWithQueryTerms():
 def calcWtTF(term, docID):
     #formula (1 + log_base10_Tf)
     result = 0
-    rawTf = indexReader.getTermFreqOfDoc(term, docID)
+    rawTf = indexReader.getTermFreqOfDoc(term, docID)    
     if rawTf == 0:        
         return result #avoid calculating log of 0 and its error
     else:
@@ -96,7 +96,7 @@ def calcWtIDF(term):
     #formula log_base10_(NumOfDocs/df)
     result = 0
     totalDoc = indexReader.getNumOfTotalDocs()
-    rawDf = indexReader.getDocFreqOfTerm(term)
+    rawDf = indexReader.getDocFreqOfTerm(term) 
     if rawDf == 0: #avoid calculating log of 0 and its error
         return result
     else:
@@ -111,8 +111,8 @@ def calcTfIdfScore(docId):# calculate tf.idf score of a document given query ter
     score = 0    
     for i in queryTermsForRankSearch:        
         curTF = calcWtTF(i, docId)
-        curIdf = calcWtIDF(i)
-        score = score + curTF + curIdf
+        curIdf = calcWtIDF(i)        
+        score = score + (curTF * curIdf)
     return score
 
 def rankDocList(topK):
